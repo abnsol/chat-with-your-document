@@ -2,8 +2,12 @@ langchain
 langchain-text-splitters 
 langchain-community 
 langgraph
-langchain[openai]
-langchain-openai
+langchain[google-genai]
+langchain-google-genai
 langchain-core
 pypdf
 langchain-chroma 
+python-dotenv
+streamlit
+openai
+langchain-openai
