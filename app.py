@@ -7,13 +7,6 @@ import sys
 import pickle
 from rag import rag_pipeline
 
-# --- Async fix for Streamlit on Linux/Mac ---
-if sys.platform in ["linux", "darwin"]:
-    try:
-        asyncio.get_running_loop()
-    except RuntimeError:
-        asyncio.set_event_loop(asyncio.new_event_loop())
-
 # --- Environment Setup ---
 load_dotenv()
 os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
